@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ArtemiySaidaliev/WebStore/issues"
   },
-  "homepage": "https://github.com/ArtemiySaidaliev/WebStore#readme"
+  "homepage": "https://github.com/ArtemiySaidaliev/WebStore#readme",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
 }
