@@ -1,0 +1,20 @@
+{
+  "name": "webstore",
+  "version": "1.0.0",
+  "description": "my store web page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemiySaidaliev/WebStore.git"
+  },
+  "author": "Artemiy Afanasyev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemiySaidaliev/WebStore/issues"
+  },
+  "homepage": "https://github.com/ArtemiySaidaliev/WebStore#readme"
+}
