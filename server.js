@@ -17,7 +17,7 @@ function accept(req,res){
         if(messge.category == 'snowboard'){
             res.end('Available: snowboard blue')
         }
-        if(messge.category == "helmet"){
+        if(messge.category == 'helmet'){
             res.end('helmets out of stock')
         }
         else{
