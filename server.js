@@ -10,14 +10,14 @@ function accept(req,res){
         res.end('We have: long ski,medium ski, short ski, snowboard red, snowboard blue, snowboard yellow and helmet')
     }
     if(urlParsed=='/available'){
-        let message = urlObj.query.message
-        if(message.category == 'ski'){
+        let messge = urlObj.query.messge
+        if(messge.category == 'ski'){
             res.end('Available: long ski, short ski')
         }
-        if(message.category == 'snowboard'){
+        if(messge.category == 'snowboard'){
             res.end('Available: snowboard blue')
         }
-        if(message.category == "helmet"){
+        if(messge.category == "helmet"){
             res.end('helmets out of stock')
         }
         else{
