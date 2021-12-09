@@ -11,16 +11,18 @@ function accept(req,res){
     }
     if(urlParsed=='/available'){
         let message = urlObj.query.message
-        if(message.type == 'ski'){
+        if(message.category == 'ski'){
             res.end('Available: long ski, short ski')
         }
-        if(message.type == 'snowboard'){
+        if(message.category == 'snowboard'){
             res.end('Available: snowboard blue')
         }
-        if(message.type == 'helmet'){
+        if(message.category == "helmet"){
             res.end('helmets out of stock')
         }
-
+        else{
+            res.end('something wrong!')
+        }
     }
     else{file.serve(req,res)}
 }

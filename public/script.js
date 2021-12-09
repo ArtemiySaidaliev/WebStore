@@ -3,10 +3,9 @@ let boardBtn = document.getElementById("boardBtn")
 let gearBtn = document.getElementById("gearBtn")
 let startBtn = document.getElementById("startBtn")
 skiBtn.addEventListener('click', function(){
-    alert('Ski')
     let xhr = new XMLHttpRequest()
     let message = {
-        "type" : "ski"
+        "category" : "ski"
     }
     xhr.open('GET','/available?message=' + JSON.stringify(message),true)
     xhr.onreadystatechange=function(){
@@ -17,10 +16,9 @@ skiBtn.addEventListener('click', function(){
 })
 
 boardBtn.addEventListener('click', function(){
-    alert('Snow board')
     let xhr = new XMLHttpRequest()
     let message = {
-        "type" : "snowboard"
+        "category" : "snowboard"
     }
     xhr.open('GET','/available?message=' + JSON.stringify(message),true)
     xhr.onreadystatechange=function(){
@@ -31,10 +29,9 @@ boardBtn.addEventListener('click', function(){
 })
 
 gearBtn.addEventListener('click', function(){
-    alert('Snow board')
     let xhr = new XMLHttpRequest()
     let message = {
-        "type" : "helmet"
+        "category" : "helmet"
     }
     xhr.open('GET','/available?message=' + JSON.stringify(message),true)
     xhr.onreadystatechange=function(){
